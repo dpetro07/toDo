@@ -26,7 +26,7 @@ $(document).ready(function()  {
         var wordTd = $("<td>").append(newWord);
         var deleteBtn = $("<button>").append("Delete");
         var deleteTd = $("<td>").append(deleteBtn);
-        var completedBtn = $("<button>").addClass("btn btn-primary").append("I'm Finished"); 
+        var completedBtn = $("<input>").attr("type", "checkbox").addClass("check").append("I'm Finished"); 
         var completedTd = $("<td>").addClass("completeTd").append(completedBtn); 
 
 
@@ -47,7 +47,7 @@ $(document).ready(function()  {
     });
 
     /*This is so that when you press the I'm Finished button on the list a line gets put through that row*/
-    $("table").on("click" , ".btn-primary" , function() {
+    $("table").on("click" , ".check" , function() {
         $(this).replaceWith($("<p>").addClass("strike").append("Finished"));
         $("p").parent().prev().prev().css("text-decoration", "line-through");
     });
