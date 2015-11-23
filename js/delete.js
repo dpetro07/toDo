@@ -48,8 +48,8 @@ $(document).ready(function()  {
 
     /*This is so that when you press the I'm Finished button on the list a line gets put through that row*/
     $("table").on("click" , ".btn-primary" , function() {
-        $(this).replaceWith($("<p>").addClass("Completed").append("Finished"));
-        $("p").parent().prev().css("text-decoration" , "line-through");
+        $(this).replaceWith($("<p>").addClass("strike").append("Finished"));
+        $("p").parent().prev().prev().css("text-decoration", "line-through");
     });
 
 
