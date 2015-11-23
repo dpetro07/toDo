@@ -46,7 +46,7 @@ $(document).ready(function()  {
         }
     });
 
-    /*This is so that when you press the I'm Finished button on the list a line gets put through that row*/
+    /*This is so that when you click the checkbox a line gets put through that row*/
     $("table").on("click" , ".check" , function() {
         $(this).replaceWith($("<p>").addClass("strike").append("Finished"));
         $("p").parent().prev().prev().css("text-decoration", "line-through");
