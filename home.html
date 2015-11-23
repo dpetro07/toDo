@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
     <!-- Bootstrap link -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/spacelab/bootstrap.min.css">
 
@@ -8,13 +10,16 @@
     <link rel="stylesheet" type="text/css" href="todo.css">
   <title>To Do List</title>
   <body>
-
+  <h1>To Do List</h1>
+  <br>
+  <br>
+  <br>
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="col-md-12">
                 <form class="form-inline">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="newWord" placeholder="What do you need to to?" autocomplete="off" />        
+                        <input type="text" class="form-control" id="newWord" placeholder="I NEED TO..." autocomplete="off" />        
                     </div>
                     <button type="submit" class="btn btn-success">Add</button>  
                 </form>    
@@ -23,35 +28,22 @@
     </div>
     <br/>
         <div class="row">
-            <div class="col-md-9">
-                <table class="table table-bordered table-hover">
+            <div class="col-md-12">
+                <table class="table table-bordered table-hover" class="tblPlacement">
                     <tr>
-                    <th colspan="3">To Do List</th>
+                    <th colspan="3" class="listHeader">To Do List</th>
                     </tr>
                     <tr>
                         <td>Things I need to do!</td>
-                        <td class="completeTd">Completed</td>
-                        <td class="deleteTd">I don't need it anymore</td>
+                        <td class="completeTd">I don't need this anymore</td>
+                        <td class="deleteTd">Completed</td>
                     </tr>
                 </table> 
             </div>    
         </div>
-        
     </div>
-
-
-
-
-
-
-
-
-
-
-
-<!--Background Images-->
+<!--Background Images for when I get all the Javascript to work-->
 <!--
-
 <img class="stickyNote" src="img/stickyNote1.png">
 <img class="notepad" src="img/notepad.png">
 <img class="pen" src="img/pen.png">
